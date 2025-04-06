@@ -2,44 +2,207 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Resumo para Prova de Redes</title>
+  <title>Quiz - Redes de Computadores (20 questões)</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      line-height: 1.6;
-      background-color: #f9f9f9;
+      background: #f4f7fa;
       color: #333;
     }
-    h1, h2 {
+    h1 {
       color: #005f99;
     }
-    h2 {
-      margin-top: 30px;
+    .questao {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    ul {
-      margin-left: 20px;
+    button {
+      padding: 10px 20px;
+      background: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
     }
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 3px;
-      font-family: monospace;
+    .result {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-    <h2>🕰️ História e Evolução das Redes de Computadores</h2>
-    <p><strong>Anos 60:</strong> Surgimento da ARPANET, primeira rede de comutação de pacotes, financiada pelo Departamento de Defesa dos EUA.</p>
 
-    <p>Anos 70: Protocolos iniciais como NCP e depois o TCP/IP foram desenvolvidos. Início do conceito de interconexão de redes.</p>
+  <h1>Quiz - Redes de Computadores</h1>
+  <form id="quizForm">
+    <div class="questao">
+      <p><strong>1. Qual foi a primeira rede de comutação de pacotes?</strong></p>
+      <label><input type="radio" name="q1" value="b"> ARPANET</label><br>
+      <label><input type="radio" name="q1" value="a"> Ethernet</label><br>
+      <label><input type="radio" name="q1" value="c"> WWW</label>
+    </div>
 
-    <p>Anos 80: Surgimento das LANs (Local Area Networks) com tecnologias como Ethernet. Primeiras padronizações de redes.</p>
+    <div class="questao">
+      <p><strong>2. Em que década surgiu o protocolo TCP/IP?</strong></p>
+      <label><input type="radio" name="q2" value="a"> Anos 60</label><br>
+      <label><input type="radio" name="q2" value="b"> Anos 70</label><br>
+      <label><input type="radio" name="q2" value="c"> Anos 90</label>
+    </div>
 
-    <p>Anos 90: Popularização da Internet. Aparecimento do WWW (World Wide Web) por Tim Berners-Lee. Crescimento de provedores de acesso.</p>
+    <div class="questao">
+      <p><strong>3. Qual topologia conecta todos os dispositivos a um único cabo?</strong></p>
+      <label><input type="radio" name="q3" value="a"> Estrela</label><br>
+      <label><input type="radio" name="q3" value="b"> Barramento</label><br>
+      <label><input type="radio" name="q3" value="c"> Anel</label>
+    </div>
 
-    <p>Anos 2000 até hoje: Adoção massiva de redes sem fio (Wi-Fi), 3G/4G/5G, IoT (Internet das Coisas), computação em nuvem e virtualização de redes.</p>
-  
+    <div class="questao">
+      <p><strong>4. O que ocorre se o hub falhar em uma topologia estrela?</strong></p>
+      <label><input type="radio" name="q4" value="a"> Somente o nó falha</label><br>
+      <label><input type="radio" name="q4" value="b"> Nada acontece</label><br>
+      <label><input type="radio" name="q4" value="c"> Toda a rede para</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>5. Em qual camada do modelo OSI atua o protocolo IP?</strong></p>
+      <label><input type="radio" name="q5" value="a"> Camada 3 - Rede</label><br>
+      <label><input type="radio" name="q5" value="b"> Camada 4 - Transporte</label><br>
+      <label><input type="radio" name="q5" value="c"> Camada 2 - Enlace</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>6. Qual camada é responsável por criptografia e compressão?</strong></p>
+      <label><input type="radio" name="q6" value="a"> Aplicação</label><br>
+      <label><input type="radio" name="q6" value="b"> Apresentação</label><br>
+      <label><input type="radio" name="q6" value="c"> Sessão</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>7. Qual é o principal problema da comunicação via satélite?</strong></p>
+      <label><input type="radio" name="q7" value="a"> Baixa cobertura</label><br>
+      <label><input type="radio" name="q7" value="b"> Alta latência</label><br>
+      <label><input type="radio" name="q7" value="c"> Baixa largura de banda</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>8. Qual camada do OSI define os cabos e sinais elétricos?</strong></p>
+      <label><input type="radio" name="q8" value="a"> Enlace</label><br>
+      <label><input type="radio" name="q8" value="b"> Física</label><br>
+      <label><input type="radio" name="q8" value="c"> Transporte</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>9. Qual técnica de detecção de erros usa divisão de polinômios?</strong></p>
+      <label><input type="radio" name="q9" value="a"> Checksum</label><br>
+      <label><input type="radio" name="q9" value="b"> CRC</label><br>
+      <label><input type="radio" name="q9" value="c"> Paridade</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>10. Qual categoria de cabo UTP suporta até 10 Gbps em 100 metros?</strong></p>
+      <label><input type="radio" name="q10" value="a"> Cat 5e</label><br>
+      <label><input type="radio" name="q10" value="b"> Cat 6</label><br>
+      <label><input type="radio" name="q10" value="c"> Cat 6a</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>11. O que significa LAN?</strong></p>
+      <label><input type="radio" name="q11" value="a"> Large Area Network</label><br>
+      <label><input type="radio" name="q11" value="b"> Local Area Network</label><br>
+      <label><input type="radio" name="q11" value="c"> Long Access Network</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>12. A topologia malha é conhecida por:</strong></p>
+      <label><input type="radio" name="q12" value="a"> Baixo custo</label><br>
+      <label><input type="radio" name="q12" value="b"> Alta confiabilidade</label><br>
+      <label><input type="radio" name="q12" value="c"> Uso doméstico</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>13. Qual camada do OSI trata do endereço MAC?</strong></p>
+      <label><input type="radio" name="q13" value="a"> Enlace</label><br>
+      <label><input type="radio" name="q13" value="b"> Rede</label><br>
+      <label><input type="radio" name="q13" value="c"> Transporte</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>14. Qual camada gerencia sessões entre aplicações?</strong></p>
+      <label><input type="radio" name="q14" value="a"> Apresentação</label><br>
+      <label><input type="radio" name="q14" value="b"> Sessão</label><br>
+      <label><input type="radio" name="q14" value="c"> Transporte</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>15. O protocolo TCP pertence a qual camada?</strong></p>
+      <label><input type="radio" name="q15" value="a"> Rede</label><br>
+      <label><input type="radio" name="q15" value="b"> Enlace</label><br>
+      <label><input type="radio" name="q15" value="c"> Transporte</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>16. Qual é o meio físico mais imune a interferências?</strong></p>
+      <label><input type="radio" name="q16" value="a"> UTP</label><br>
+      <label><input type="radio" name="q16" value="b"> Fibra óptica</label><br>
+      <label><input type="radio" name="q16" value="c"> Coaxial</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>17. O que significa CRC?</strong></p>
+      <label><input type="radio" name="q17" value="a"> Cyclic Redundancy Check</label><br>
+      <label><input type="radio" name="q17" value="b"> Control Relay Code</label><br>
+      <label><input type="radio" name="q17" value="c"> Cable Redundancy Control</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>18. Em que camada se encontram protocolos como HTTP e FTP?</strong></p>
+      <label><input type="radio" name="q18" value="a"> Aplicação</label><br>
+      <label><input type="radio" name="q18" value="b"> Apresentação</label><br>
+      <label><input type="radio" name="q18" value="c"> Sessão</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>19. Qual tipo de topologia é mais comum no mundo real?</strong></p>
+      <label><input type="radio" name="q19" value="a"> Híbrida</label><br>
+      <label><input type="radio" name="q19" value="b"> Anel</label><br>
+      <label><input type="radio" name="q19" value="c"> Árvore</label>
+    </div>
+
+    <div class="questao">
+      <p><strong>20. O que é um endereço MAC?</strong></p>
+      <label><input type="radio" name="q20" value="a"> Endereço lógico</label><br>
+      <label><input type="radio" name="q20" value="b"> Endereço físico da interface de rede</label><br>
+      <label><input type="radio" name="q20" value="c"> Endereço de IP do roteador</label>
+    </div>
+
+    <button type="button" onclick="corrigirQuiz()">Ver Resultado</button>
+    <div class="result" id="resultado"></div>
+  </form>
+
+  <script>
+    function corrigirQuiz() {
+      const respostas = {
+        q1: "b", q2: "b", q3: "b", q4: "c", q5: "a",
+        q6: "b", q7: "b", q8: "b", q9: "b", q10: "c",
+        q11: "b", q12: "b", q13: "a", q14: "b", q15: "c",
+        q16: "b", q17: "a", q18: "a", q19: "a", q20: "b"
+      };
+
+      let acertos = 0;
+      for (let i = 1; i <= 20; i++) {
+        const resposta = document.querySelector(`input[name="q${i}"]:checked`);
+        if (resposta && resposta.value === respostas[`q${i}`]) {
+          acertos++;
+        }
+      }
+
+      document.getElementById("resultado").innerHTML =
+        `Você acertou ${acertos} de 20 questões.`;
+    }
+  </script>
 
 </body>
 </html>
